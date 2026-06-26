@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /etairika-stoixeia.html
+Disallow: /company-details.html
+
+Sitemap: https://flight-intelligence.com/sitemap.xml

@@ -1,0 +1,3 @@
+# Local-only design reference — must not ship to GitHub Pages.
+# Leaks the unreleased product name; see CLAUDE.md hard constraint #2.
+flightintelligence-brand/
