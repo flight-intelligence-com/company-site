@@ -262,3 +262,25 @@ a:hover{ color:var(--mid-press); }
   .foot{ background:transparent; color:#000; border-top:1px solid #000; }
   .foot__legal b, .foot__legal a, .foot__meta{ color:#000; }
 }
+
+/* ---------- Registry-style drawers (compliance pages) ---------- */
+details.block{ border-top:1px solid var(--line); padding:0; }
+details.block:first-of-type{ border-top:none; }
+details.block[open]{ padding-bottom:26px; }
+
+summary.block__label{
+  list-style:none; cursor:pointer; user-select:none; margin:0;
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:22px 0;
+}
+summary.block__label::-webkit-details-marker{ display:none; }
+summary.block__label::after{
+  content:""; flex:none; width:8px; height:8px;
+  border-right:2px solid var(--mid); border-bottom:2px solid var(--mid);
+  transform:rotate(45deg); transition:transform .2s ease;
+}
+details.block[open] > summary.block__label::after{ transform:rotate(-135deg); }
+summary.block__label:hover{ color:var(--text); }
+@media (prefers-reduced-motion:reduce){
+  summary.block__label::after{ transition:none; }
+}
